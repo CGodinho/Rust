@@ -8,6 +8,13 @@ The language compiler. Example:
 
 File is linked and an executable is created.
 
+## cargo
+
+Build system and package manager.
+Create a new project with:
+
+`cargo new hello_cargo`
+
 ## Call Documentation
 
 rustup doc
