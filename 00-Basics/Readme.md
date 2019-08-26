@@ -13,7 +13,12 @@ Some important concepts to remember:
    - Expressions are instructions that perform an action and return a value. They do not end with ";" otherwise no value is returned;
 
  * Function parameters need always data types;
- 
+
  * Function may have return values after "->";
+
+ * Comments are made with "//";
+
+ * **Crates** are the packages;
+ 
 
  
