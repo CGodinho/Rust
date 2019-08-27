@@ -16,4 +16,4 @@ Some important concepts to remember:
  
  * Function may have return values after "->";
 
- 
+ * Crate are packages provided by the community. A create with "_" is written in cargo with "-";
