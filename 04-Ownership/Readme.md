@@ -35,32 +35,51 @@ Function call uses the heap.
 }
 ```
 
+### Copy references
+
+```rust,no_run
+{
+    // No problem basic type copy is executed
+    let x = 5;
+    let y = x;
+
+    let s1 = String::from("hello");
+    // Wait! s2 gets ownership of s1, s1 no loger use
+    let s2 = s1;
+    
+    // Error!
+    println!("{}, world!", s1);
+    // OK!
+    println!("{}, world!", s2);
+}
+```
+
+s1 was moved into s2.  S1 is no longer **valid** so on problems with later scope clear.
+So it works as a kind of **shallow copy**.
+
+### Deep copy
+
+```rust,no_run
+{
+    let s1 = String::from("hello");
+    let s2 = s1.clone();
+
+    println!("s1 = {}, s2 = {}", s1, s2);
+}
+```
+
+By calling `clone`, the string gets copiesd and onow there are 2 distinct references.
 
 
-## cc
+## Types with copy trait
+
+ * Integers;
+ * The Boolean type (bool);
+ * Floating point types;
+ * The character type (char);
+ * Tuples, if they only contain types that are also Copy.
 
 
-`let x = 5;`
+## Functions
 
-`x = 6;` <span style="color:red"> -> ERROR</span>
-
-For mutable, use reserve word **mut**:
-
-`let mut x = 5;`
-
-`let mut x = 6;`
-
-
-## Reassign
-
-Using let it is possible to redefine a immutable variable:
-
-`let spaces = "   ";`
-
-`let spaces = spaces.len();`
-
-## Constants
-
-`const MAX_POINTS: u32 = 100_000;`
-
-**NOTE:** Use uppercase for constants.
+Types without the copy trait that are sent directly to functions as arguments are also drop.
