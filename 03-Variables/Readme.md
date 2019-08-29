@@ -1,4 +1,4 @@
-# Variables
+# Variables (called bindings)
 
 ## Mutable / Immutable
 
