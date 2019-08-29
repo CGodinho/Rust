@@ -1,8 +1,4 @@
-<<<<<<< HEAD
-# Ownership``
-=======
 # Ownership
->>>>>>> ea8894cf27f748c3d95a1dd06c807e17858bb1f6
 
 ## Stack / Heap
 
@@ -10,45 +6,10 @@ Stack uses **LIFO**, with push and pop operations. Only accepts fixed suze data.
 
 Heap **allocates** a requested amount of data and returns a pointer. 
 
-<<<<<<< HEAD
-
 Accessing data in the heap is slower and allocation also takes time.
 Function call uses the heap.
 
 **Ownership** hides the abov details.
-
-
-
-
-`let x = 5;`
-
-`x = 6;` <span style="color:red"> -> ERROR</span>
-
-For mutable, use reserve word **mut**:
-
-`let mut x = 5;`
-
-`let mut x = 6;`
-
-
-## Reassign
-
-Using let it is possible to redefine a immutable variable:
-
-`let spaces = "   ";`
-
-`let spaces = spaces.len();`
-
-## Constants
-
-`const MAX_POINTS: u32 = 100_000;`
-
-**NOTE:** Use uppercase for constants.
-=======
-Accessing data in the heap is slower and allocation also takes time.
-Function call uses the heap.
-
-**Ownership** hides the above details.
 
 
 ## Rules
@@ -180,4 +141,4 @@ fn change(some_string: &mut String) {
 * At any given time, there can be only one mutable reference or any number of immutable references;
 
 * References must always be valid.
->>>>>>> ea8894cf27f748c3d95a1dd06c807e17858bb1f6
+
