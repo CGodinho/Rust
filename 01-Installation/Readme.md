@@ -1,5 +1,9 @@
 # Installation
 
+## Guidelines
+
+Available at [rustup.rs](<https://rustup.rs/>)
+
 ## Windows
 
 If behind a proxy, start by defining the **power shell proxy setup**:
@@ -10,7 +14,7 @@ If behind a proxy, start by defining the **power shell proxy setup**:
 
 `$ENV:HTTPS_PROXY=$proxy`
 
-Installation made by running [downlodable](<https://www.rust-lang.org/tools/install>):
+Installation made by running [downloadable](<https://www.rust-lang.org/tools/install>):
 
 `.\rustup-init.exe`
 
@@ -32,13 +36,23 @@ Check installation with:
 
 ## Linux and Mac OS
 
-~In termina lexecue command:
+In terminal execute command:
 
 `curl https://sh.rustup.rs -sSf | sh`
 
 Load environment with:
 
 `source ~/.cargo/env`
+
+
+## Rustup
+
+Tool chain manager for rust
+
+Allows to manage installed rust
+
+Manages complex package installation
+
 
 ## Call Documentation
 

@@ -10,11 +10,16 @@ File is linked and an executable is created.
 
 ## cargo
 
-Build system and package manager.
-Create a new project with:
+Build system and package manager. Commands:
 
-`cargo new hello_cargo`
 
-## Call Documentation
+|Command |Description |
+| ------------- |:-------------:|
+|`cargo new <project>` | creates a new project |
+|`cargo run` | build and runs current project |
 
-rustup doc
+## rustup
+
+rust install manager
+
+`rustup doc`
