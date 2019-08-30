@@ -9,7 +9,7 @@ Heap **allocates** a requested amount of data and returns a pointer.
 Accessing data in the heap is slower and allocation also takes time.
 Function call uses the heap.
 
-**Ownership** hides the above details.
+**Ownership** hides the abov details.
 
 
 ## Rules
@@ -141,3 +141,4 @@ fn change(some_string: &mut String) {
 * At any given time, there can be only one mutable reference or any number of immutable references;
 
 * References must always be valid.
+
