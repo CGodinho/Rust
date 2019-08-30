@@ -16,13 +16,12 @@ Some important concepts to remember:
 
  * Function may have return values after "->";
 
-<<<<<<< HEAD
  * Crate are packages provided by the community. A create with "_" is written in cargo with "-";
-=======
- * Comments are made with "//";
 
- * **Crates** are the packages;
- 
+ * Comments are made with "//", for documentation comments "///" are used;
 
- 
->>>>>>> ea8894cf27f748c3d95a1dd06c807e17858bb1f6
+ * Crates have a conversioning with format **major.minor.patch**. Between minors there should be no changes in the API;
+
+ * Dependencies are specifies in file **cargo.toml**;
+
+
