@@ -2,19 +2,19 @@
 
 ## Stack / Heap
 
-Stack uses **LIFO**, with push and pop operations. Only accepts fixed suze data.
+Stack uses **LIFO**, with push and pop operations. Only accepts fixed size data.
 
 Heap **allocates** a requested amount of data and returns a pointer. 
 
 Accessing data in the heap is slower and allocation also takes time.
 Function call uses the heap.
 
-**Ownership** hides the abov details.
+**Ownership** hides the above details.
 
 
 ## Rules
 
- * Each value in Rust has a variable that’s called its owner;
+ * Each value in Rust has an owner;
  * There can only be one owner at a time;
  * When the owner goes out of scope, the value will be dropped.
 
@@ -31,11 +31,11 @@ Function call uses the heap.
     s.push_str(", world!");
 
     println!("{}", s)
-    
-    // scope ends and s is free automatically
+
 }
 ```
 
+scope ends and s is **free automatically**
 
 ### Copy references
 
